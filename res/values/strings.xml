@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Word Find</string>
+    <string name="Exit">Exit</string>
+    <string name="SpinPrompt">SpinPrompt</string>
+    <string name="NewGame">NewGame</string>
+    <string name="Pause">Pause</string>
+    <string name="EditText">EditText</string>
+    <string name="Time">Time</string>
+    <string name="SpinPlayersList">SpinPlayersList</string>
+    <string name="SingleplayActivity">Word Find</string>
+    <string name="HelpActivity">Word Find</string>
+    <string name="NetworkActivity">Word Find</string>
+    <string name="LobbyActivity">Word Find</string>
+    
+</resources>

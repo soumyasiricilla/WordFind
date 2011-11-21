@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:background="@drawable/background2"
+  android:layout_height="fill_parent"
+  android:gravity="center"  >
+
+        <EditText android:id="@+id/EditText"
+        android:text="@string/EditText"
+        android:layout_width="300px" 
+        android:layout_height="70px"
+        android:layout_toLeftOf="@+id/btnPlay"
+       android:layout_alignTop="@+id/btnPlay"
+        /> 
+    
+        <Button android:text="Play"
+        android:id="@+id/btnPlay"
+        android:onClick="OnClickPlay"
+        android:textSize="18px"
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        />
+
+       <Spinner
+      android:id="@+id/spinWordsFound"
+     android:layout_width="400px"    
+      android:layout_height="wrap_content"
+      android:prompt="@string/SpinPlayersList"
+      android:layout_below="@+id/btnPlay"
+      android:layout_marginLeft="45px"
+      android:layout_marginTop="30px"
+     />
+
+           
+</RelativeLayout>

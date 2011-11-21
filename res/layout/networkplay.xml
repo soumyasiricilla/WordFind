@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background2">
+  
+  <Button
+    android:id="@+id/btnNetworkExit"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:text="@string/Exit"
+    android:onClick="OnClickExitN"
+    android:layout_alignParentRight="true"
+    
+     android:layout_marginTop="10dip"
+    />
+     <Button
+    android:id="@+id/buttonNewGame"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:text="@string/NewGame"
+    android:onClick="OnNewGame"
+    android:layout_toLeftOf="@id/btnNetworkExit"
+     android:layout_alignTop="@id/btnNetworkExit"
+          
+    />
+    
+  <TextView
+    android:id="@+id/textTime"
+    android:layout_width="60px"    
+    android:layout_height="wrap_content"
+    android:text="@string/Time"
+    android:layout_toLeftOf="@+id/buttonNewGame"
+    android:layout_alignTop="@+id/buttonNewGame"
+    android:textStyle="bold"
+    android:textColor="#000"
+    />
+    <TextView
+    android:id="@+id/textVeiwShowTime"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/textViewScore"
+    android:layout_toLeftOf="@+id/buttonNewGame"
+    android:layout_below="@+id/textTime"
+    android:text="STym"
+    android:textStyle="bold"
+    
+    />
+    <TableLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_marginTop="8dip">
+    <TableRow>
+        <TextView
+            android:text="Score"
+            android:textStyle="bold"
+            android:textColor="#000"
+                        />
+        </TableRow>
+    <TableRow>
+    <TextView
+            android:text="You"
+            android:textStyle="bold"
+              />
+       <TextView
+            android:text="Ysocre"
+                       
+            />
+      </TableRow>
+ <TableRow>
+    <TextView
+            android:text="Opp"
+            android:textStyle="bold"
+            
+            />
+       <TextView
+            android:text="oscore"
+                       
+            />
+      </TableRow>
+</TableLayout>
+    <GridView
+    android:id="@+id/gridview"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"    
+    android:columnWidth="30dp"    
+    android:numColumns="5"    
+    android:verticalSpacing="2dp"    
+    android:horizontalSpacing="2dp"    
+    android:stretchMode="none"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_margin="60dp"
+   
+    />
+		
+	<TextView
+    android:id="@+id/textViewTotal"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:textStyle="bold"
+    />
+    <Spinner
+    android:id="@+id/spinWordsFound"
+    android:layout_alignParentBottom="true"  
+    android:layout_width="350px"    
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:prompt="@string/SpinPrompt"
+    android:layout_marginBottom="20dip"
+    android:layout_marginLeft="20dip"
+    />
+    
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/background"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center"
+  >
+  <Button android:text="Single Play"
+         android:onClick="OnClickSingleplay"
+        android:id="@+id/btnSingleplay"
+        android:layout_width="220px"
+        android:textSize="30px"
+         android:layout_height="70px">
+     
+    </Button> 
+    <Button android:text="Network Play"
+        android:onClick="OnClickNetwork"
+        android:id="@+id/btnnetworkplay"
+        android:layout_width="220px"
+        android:textSize="30px"
+        android:layout_height="70px" android:layout_marginTop="35px" >
+    </Button>
+<Button android:text="Instructions ?"
+        android:onClick="OnClickInstructions"
+         android:id="@+id/btninstuctions"
+        android:layout_width="220px"
+        android:textSize="30px"
+        android:layout_height="70px" android:layout_marginTop="35px" >
+    </Button> 
+       
+</LinearLayout>

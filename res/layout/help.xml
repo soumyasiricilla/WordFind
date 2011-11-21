@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/background2"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="1">
+  
+   <Button android:text="Menu"
+        android:id="@+id/btnmenu"
+        android:onClick="OnClickMenu"
+        android:layout_width="100px"
+        android:layout_gravity="right"
+            android:textSize="18px"
+        android:layout_height="55px"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip" >
+    </Button>
+  <TextView
+   android:layout_width="wrap_content"
+   android:layout_height="70px"
+   android:layout_marginTop="20px"
+   android:layout_marginLeft="130px" 
+   android:textSize="32px"
+   android:textStyle="bold"
+   android:text="Instructions"
+  />
+  <TextView  
+  android:layout_width="wrap_content"
+  android:layout_marginTop="5px"
+  android:layout_marginLeft="20px"
+  android:layout_marginRight="10px"
+  android:layout_height="100px" 
+  android:text=" Your Objective is to find the words,Check the first letter and last letter of a word in the grid in either of the following order"  android:layout_weight="0.26" android:textSize="28px"/>
+ <TextView  
+  android:layout_width="wrap_content"
+  android:layout_height="100px" 
+  android:layout_marginLeft="20px"
+  android:layout_marginRight="10px"
+  android:text="1.Horizantally from left to right.
+     2. Vertically from top to bottom.
+     3. Diagonally Left to right."  
+   android:textSize="28px"/>
+ <TwoLineListItem android:id="@+id/twoLineListItem1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TwoLineListItem>
+  
+  <TextView  
+  android:layout_width="wrap_content"
+  android:layout_height="100px"
+   android:layout_marginTop="20px"
+  android:layout_marginLeft="20px"
+  android:layout_marginRight="10px"
+  android:text="The score increases incrementally for each word that is found and longer words have a higher score than shorter ones. The game provides a bonus if all possible words have been found."  android:layout_weight="0.26" android:textSize="28px"/>
+  
+
+</LinearLayout>

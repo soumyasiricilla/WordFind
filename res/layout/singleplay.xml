@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+         
+	<Button
+    android:id="@+id/buttonNewGameExit"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:text="@string/Exit"
+    android:onClick="OnExit"
+    android:layout_alignParentRight="true"
+    
+     android:layout_marginTop="10dip"
+    />
+     <Button
+    android:id="@+id/buttonNewGame"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:text="@string/NewGame"
+    android:onClick="OnNewGame"
+    android:layout_toLeftOf="@id/buttonNewGameExit"
+     android:layout_alignTop="@id/buttonNewGameExit"
+          
+    />
+    <Button
+    android:id="@+id/buttonPause"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:text="@string/Pause"
+    android:onClick="OnPause"
+   android:layout_toLeftOf="@id/buttonNewGame"
+   android:layout_alignTop="@id/buttonNewGame"
+    />
+    
+     <TextView
+    android:id="@+id/textTime"
+    android:layout_width="60px"    
+     android:layout_height="wrap_content"
+    android:text="@string/Time"
+    android:layout_toLeftOf="@+id/buttonPause"
+    android:layout_alignTop="@+id/buttonPause"
+    android:textStyle="bold"
+    android:textColor="#000"
+    />
+    <TextView
+    android:id="@+id/textVeiwShowTime"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/textViewScore"
+    android:layout_below="@+id/textTime"
+    android:text="STi"
+    android:layout_marginLeft="67px"
+    android:textStyle="bold"
+    
+    />
+   
+    
+    <GridView
+    android:id="@+id/gridview"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"    
+    android:columnWidth="30dp"    
+    android:numColumns="5"    
+    android:verticalSpacing="2dp"    
+    android:horizontalSpacing="2dp"    
+    android:stretchMode="none"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_margin="60dp"
+   
+    />
+		<TextView
+    android:id="@+id/textViewScore"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textViewTotal"
+    android:textStyle="bold"
+    android:textColor="#000"
+        
+    />
+	<TextView
+    android:id="@+id/textViewTotal"
+    android:layout_width="wrap_content"    
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:textStyle="bold"
+    android:textColor="#000"
+    />
+    <Spinner
+    android:id="@+id/spinWordsFound"
+    android:layout_alignParentBottom="true"  
+    android:layout_width="350px"    
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:prompt="@string/SpinPrompt"
+    android:layout_marginBottom="20dip"
+    android:layout_marginLeft="20dip"
+    />
+</RelativeLayout>
